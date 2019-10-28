@@ -1,0 +1,22 @@
+label
+  input(type="checkbox")
+  .panels
+    .panel
+      h1 變位加密器
+      h4 點我展開/關閉清單
+      textarea#input(rows="4",placeholder="輸入英文及數字") ABC
+      .symbol ↑↓
+      textarea#output(rows="4",placeholder="輸入密碼")
+      .playlist
+      .buttons
+        button#btnMorse 翻譯成密碼
+        button#btnEng 翻譯回來
+        button#btnPlay 播放
+
+    .panel#list
+      h3 翻譯清單
+      hr
+      ul.translist
+    
+<body onDRAGSTART="window.event.returnValue=false" onCONTEXTMENU="window.event.returnValue=false" onSelectStart="event.returnValue=false" > 
+ 
